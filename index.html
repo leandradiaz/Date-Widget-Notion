@@ -4,17 +4,17 @@
     <style>
       #lbl {
         font-family: monospace;
-        font-size: xx-large;
-        color: #FFF6EB;
+        font-size: large;
+        color: #fff6eb;
         padding: 5px;
         border: 0px solid #ececec;
         text-align: ;
-        line-height: 1.5;
-        height: 85%
+        line-height: 1.02;
+        height: 80%
       }
 
       #date {
-        font-size: large;
+        font-size: medium;
       }
 
       body {
@@ -42,7 +42,6 @@
     if (hrs < 12) greet = 'good morning, Leandra';
     else if (hrs >= 12 && hrs <= 17) greet = 'good afternoon, Leandra';
     else if (hrs >= 17 && hrs <= 24) greet = 'good evening, Leandra';
-    document.getElementById('lbl').innerHTML = greet += ` <div id="date"> it's ${date}</div>`;
+    document.getElementById('lbl').innerHTML = greet +=`<div id="date">it's ${date}</div>`;
   </script>
 </html>
-
